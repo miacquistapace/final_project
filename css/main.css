@@ -1,15 +1,82 @@
+.flex-item{
+     padding: 5px;
+     width: 100px;
+     height: 100px;
+     margin: 10px;
+
+     line-height: 100px;
+     color: white;
+     font-weight: bold;
+     font-size: 2em;
+     text-align: center;
+   }
+
+   .flex-container{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     border: 0;
+     -ms-box-orient: horizontal;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     display: flex;
+   }
+
+   .wrap{
+ -webkit-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
 .carousel .item {
     width: 100%; /*slider width*/
-    max-height: 600px; /*slider height*/
+    max-height: 1000px; /*slider height*/
 }
 .carousel .item img {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
-/*full width container*/
-@media (max-width: 767px) {
-    .block {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
+.navbar-nav{
+  font-size: 27px;
+  white-space: nowrap;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  text-align: right;
+  position: relative;
+  margin-left: 10px;
+}
+ul.nav a:hover{
+  text-decoration: underline!important;
+}
+.active-link{
+  text-decoration: underline;
+  background-color: none;
+}
+
+.nav-link{
+  color:black !important;
+  margin-top: 55px;
+  vertical-align: middle;
+}
+.nav-link:hover{
+  color: black;
+  background-color: red;
+}
+.navbar{
+  background-color: white;
+  border: none;
+}
+footer{
+  background-color:black;
+     height:100px;
+     width:100%;
+     margin: 0 auto;
+     display: block;
+  text-align:center;
+    margin-top: 40px;
+     position:relative;
+     bottom: 0;
 }
